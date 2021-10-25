@@ -39,9 +39,11 @@ img {
 }
 
 /* Headers */
-.markdown h1,
-.markdown h2 {
+.markdown h1 {
   @apply text-xl my-6;
+}
+.markdown h2 {
+  @apply text-lg my-6 border-b-2;
 }
 .markdown h3,
 .markdown h4,

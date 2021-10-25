@@ -11,8 +11,7 @@ export default function Home({ allPostsData }) {
         <title>gengogo5.com</title>
       </Head>
       <section className="">
-        <h2 className="py-3">記事一覧</h2>
-        <ul className="">
+        <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li className="text-xl pb-3" key={id}>
               <Link href={`/posts/${id}`}>
