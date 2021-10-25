@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteName} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="bg-red-100">
+      <header className="">
         <h1 className="inline">
           <Link href="/">
             <a className="rounded h-16 inline">
@@ -33,10 +33,10 @@ export default function Layout({ children, home }) {
                 priority
                 src="/images/profile.jpg"
                 className={utilStyles.borderCircle}
-                height={48}
-                width={48}
+                height={32}
+                width={32}
               />
-            <span className="text-2xl font-bold">{siteName}</span>
+            <span className="text-xl">{siteName}</span>
             </a>
           </Link>
         </h1>

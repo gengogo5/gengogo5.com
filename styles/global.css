@@ -22,7 +22,7 @@ body {
 }
 
 a:hover {
-  @apply bg-gray-200;
+  @apply hover:opacity-60;
 }
 
 img {
