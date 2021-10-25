@@ -39,7 +39,7 @@ a:hover {
   @apply text-3xl my-6 tablet:text-2xl;
 }
 .markdown h2 {
-  @apply text-lg my-6 pb-1 border-b-2 border-indigo-100;
+  @apply text-xl my-6 pb-1 border-b-2 border-indigo-100;
 }
 .markdown h3,
 .markdown h4,

@@ -6,7 +6,7 @@ const siteName = 'gengogo5.com'
 
 export default function Layout({ children, home }) {
   return (
-    <div className="max-w-[840px] mx-auto justify-center p-12 pt-4 tablet:px-4 rounded-xl tablet:rounded-none bg-white">
+    <div className="max-w-[840px] mx-auto justify-center pt-0 p-12 tablet:px-4 rounded-xl tablet:rounded-none bg-white">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
