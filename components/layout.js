@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const siteName = 'gengogo5.com'
@@ -32,7 +30,7 @@ export default function Layout({ children, home }) {
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
+                className="rounded-full"
                 height={32}
                 width={32}
               />
@@ -43,9 +41,9 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>←記事一覧へ</a>
           </Link>
         </div>
       )}

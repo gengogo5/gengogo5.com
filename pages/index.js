@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
@@ -11,16 +10,16 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>gengogo5.com</title>
       </Head>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Recent Posts</h2>
-        <ul className={utilStyles.list}>
+      <section className="">
+        <h2 className="">新着記事</h2>
+        <ul className="">
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className="" key={id}>
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small className="text-gray-500">
                 <Date dateString={date} />
               </small>
             </li>
