@@ -6,7 +6,7 @@ const siteName = 'gengogo5.com'
 
 export default function Layout({ children, home }) {
   return (
-    <div className="max-w-[840px] mx-auto justify-center p-12 pt-4 tablet:px-4 rounded-2xl tablet:rounded-none bg-white">
+    <div className="max-w-[840px] mx-auto justify-center p-12 pt-4 tablet:px-4 rounded-xl tablet:rounded-none bg-white">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -25,7 +25,7 @@ export default function Layout({ children, home }) {
       <header className="py-3 sticky top-0 bg-white z-10">
         <h1 className="inline">
           <Link href="/">
-            <a className="rounded h-16 inline">
+            <a className="rounded h-16 block">
               <Image
                 priority
                 src="/images/profile.jpg"
@@ -33,7 +33,7 @@ export default function Layout({ children, home }) {
                 height={32}
                 width={32}
               />
-            <span className="text-xl align-top">{siteName}</span>
+              <span className="text-xl align-top">{siteName}</span>
             </a>
           </Link>
         </h1>

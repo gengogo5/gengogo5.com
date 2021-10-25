@@ -20,8 +20,9 @@ a:hover {
 /* Markdown Styles */
 /* Global */
 .markdown {
-    @apply leading-relaxed text-sm;
+    @apply leading-relaxed text-base;
 }
+/*
 @screen sm {
   .markdown {
     @apply text-base;
@@ -31,11 +32,11 @@ a:hover {
   .markdown {
     @apply text-lg;
   }
-}
+}*/
 
 /* Headers */
 .markdown h1 {
-  @apply text-xl my-6;
+  @apply text-3xl my-6 tablet:text-2xl;
 }
 .markdown h2 {
   @apply text-lg my-6 pb-1 border-b-2 border-indigo-100;
@@ -69,7 +70,7 @@ a:hover {
 
 /* Paragraph */
 .markdown p {
-  @apply mb-6 leading-8 md:leading-9 text-justify;
+  @apply mb-6 leading-8 text-justify;
 }
 
 /* Lists */
