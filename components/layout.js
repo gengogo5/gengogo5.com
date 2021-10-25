@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const siteName = 'gengogo5.com'
@@ -25,27 +23,27 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteName} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="bg-red-100">
+      <header className="py-3 sticky top-0 bg-white z-10">
         <h1 className="inline">
           <Link href="/">
             <a className="rounded h-16 inline">
               <Image
                 priority
                 src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={48}
-                width={48}
+                className="rounded-full"
+                height={32}
+                width={32}
               />
-            <span className="text-2xl font-bold">{siteName}</span>
+            <span className="text-xl align-top">{siteName}</span>
             </a>
           </Link>
         </h1>
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>&lt;&lt; 記事一覧へ</a>
           </Link>
         </div>
       )}
