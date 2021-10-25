@@ -13,10 +13,23 @@ date: "2021-10-25"
 ### Ruby
 
 ```ruby
-greet = 'Good morning!'
-name = 'Takeshi'
+class HelloWorld                 # class文
+  Version = "1.0"                # 定数の定義
+ 
+  def initialize(myname="Ruby")  # initializeメソッド
+    @name = myname               # インスタンス変数の初期化
+  end
+ 
+  def hello                      # インスタンスメソッド
+    print "Hello, world. I am ", @name, ".\n"
+  end
+end
 
-puts "Hi, #{name}. #{greet}"
+bob   = HelloWorld.new("Bob")
+alice = HelloWorld.new("Alice")
+ruby  = HelloWorld.new
+ 
+bob.hello
 
 ```
 
@@ -24,10 +37,21 @@ puts "Hi, #{name}. #{greet}"
 
 ```javascript
 
-let age = 21;
+var today = new Date();
+var thisYear = today.getFullYear();
+var thisMonth = today.getMonth() + 1;
 
-// 条件(三項)演算子
-let result = (age >= 20) ? "大人" : "子ども";
-console.log(result); // 大人
+console.log(`今年 ${thisYear} / 今月 ${thisMonth}`);
+
+var nextYear,nextMonth;
+if ( thisMonth === 12 ) {
+  nextMonth = 1;
+  nextYear = thisYear + 1;
+} else {
+  nextMonth = thisMonth; 
+  nextYear = thisYear;
+}
+
+console.log(`来月 ${nextYear}年${nextMonth}月`);
 
 ```
