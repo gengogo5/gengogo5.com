@@ -2,21 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-html,
 body {
-  @apply pt-10 pb-40 px-4;
+  @apply pt-10 pb-40 px-6 tablet:p-0;
   @apply text-gray-700;
   background-color: rgb(237, 242, 246);
   font-family: -apple-system,"BlinkMacSystemFont","Hiragino Maru Gothic ProN W4","Hiragino Sans","Meiryo","sans-serif","Segoe UI Emoji";
-}
-
-.hoge {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  line-height: 1.6;
-  font-size: 18px;
 }
 
 * {
@@ -82,7 +72,7 @@ img {
 
 /* Paragraph */
 .markdown p {
-  @apply mb-4 leading-8 md:leading-10 text-justify;
+  @apply mb-6 leading-8 md:leading-9 text-justify;
 }
 
 /* Lists */

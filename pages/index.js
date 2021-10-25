@@ -14,13 +14,14 @@ export default function Home({ allPostsData }) {
         <h2 className="py-3">記事一覧</h2>
         <ul className="">
           {allPostsData.map(({ id, date, title }) => (
-            <li className="text-lg pb-3" key={id}>
-              <small className="text-gray-500">
-                <Date dateString={date} />
-              </small>
-              <br />
+            <li className="text-xl pb-3" key={id}>
               <Link href={`/posts/${id}`}>
-                <a>{title}</a>
+                <a className="block">
+                  <div className="text-gray-500 text-base">
+                    <Date dateString={date} />
+                  </div>
+                  {title}
+                </a>
               </Link>
             </li>
           ))}
