@@ -23,9 +23,9 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className="py-3 sticky top-0 bg-white z-10">
-        <h1 className="inline">
+        <div className="inline-flex">
           <Link href="/">
-            <a className="rounded h-16 block">
+            <a className="block">
               <Image
                 priority
                 src="/images/profile.jpg"
@@ -36,7 +36,7 @@ export default function Layout({ children, home }) {
               <span className="text-xl align-top">{siteName}</span>
             </a>
           </Link>
-        </h1>
+        </div>
       </header>
       <main>{children}</main>
       {!home && (
