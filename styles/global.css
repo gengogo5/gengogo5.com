@@ -5,7 +5,7 @@
 body {
   @apply pt-10 pb-40 px-6 tablet:p-0;
   @apply text-gray-700;
-  background-color: rgb(237, 242, 246);
+  @apply bg-indigo-50;
   font-family: -apple-system,"BlinkMacSystemFont","Hiragino Maru Gothic ProN W4","Hiragino Sans","Meiryo","sans-serif","Segoe UI Emoji";
 }
 
@@ -15,11 +15,6 @@ body {
 
 a:hover {
   @apply hover:opacity-60;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 /* Markdown Styles */
@@ -43,7 +38,7 @@ img {
   @apply text-xl my-6;
 }
 .markdown h2 {
-  @apply text-lg my-6 border-b-2;
+  @apply text-lg my-6 pb-1 border-b-2 border-indigo-100;
 }
 .markdown h3,
 .markdown h4,
@@ -96,7 +91,7 @@ img {
 
 /* Blockquotes */
 .markdown blockquote {
-  @apply p-2 mx-2 my-2 bg-gray-100 mb-4 border-l-4 border-gray-400  rounded-r-lg;
+  @apply p-2 mx-2 my-2 bg-blue-50 opacity-70 mb-4 border-l-4 border-blue-300  rounded-r-lg;
 }
 .markdown blockquote > p {
   @apply mb-0;
