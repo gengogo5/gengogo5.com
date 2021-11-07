@@ -38,8 +38,8 @@ export default function Layout({ children, home }) {
                 src="/images/sitelogo.png"
                 height={32}
                 width={180}
-                loading="eager"
               />
+              <span className="font-bold text-2xl">{siteName}</span>
             </a>
           </Link>
         </div>
