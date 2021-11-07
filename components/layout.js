@@ -33,7 +33,12 @@ export default function Layout({ children, home }) {
                 height={32}
                 width={32}
               />
-              <span className="text-xl align-top">{siteName}</span>
+              <Image
+                priority
+                src="/images/sitelogo.png"
+                height={32}
+                width={180}
+              />
             </a>
           </Link>
         </div>
