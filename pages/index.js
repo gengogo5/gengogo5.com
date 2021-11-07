@@ -13,13 +13,13 @@ export default function Home({ allPostsData }) {
       <section className="">
         <ul>
           {allPostsData.map(({ id, date, title }) => (
-            <li className="pb-6 border-t-2 border-indigo-100" key={id}>
+            <li className="border-t-2 border-indigo-100" key={id}>
               <Link href={`/posts/${id}`}>
-                <a className="block">
+                <a className="block pb-6">
                   <div className="text-gray-400 text-sm">
                     <Date dateString={date} />
                   </div>
-                  <span className="text-lg">{title}</span>
+                  <span className="text-lg font-semibold">{title}</span>
                 </a>
               </Link>
             </li>
