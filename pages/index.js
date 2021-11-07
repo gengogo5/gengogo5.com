@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
                   <div className="text-gray-400 text-sm">
                     <Date dateString={date} />
                   </div>
-                  <span className="text-lg">{title}</span>
+                  <span className="text-lg font-semibold">{title}</span>
                 </a>
               </Link>
             </li>
