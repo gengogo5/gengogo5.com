@@ -15,7 +15,7 @@ export default function Home({ allPostsData }) {
           {allPostsData.map(({ id, date, title }) => (
             <li className="border-t-2 border-indigo-100" key={id}>
               <Link href={`/posts/${id}`}>
-                <a className="block pb-6">
+                <a className="block pb-6 hover:opacity-60">
                   <div className="text-gray-400 text-sm">
                     <Date dateString={date} />
                   </div>
