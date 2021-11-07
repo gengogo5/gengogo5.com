@@ -39,7 +39,6 @@ export default function Layout({ children, home }) {
                 height={32}
                 width={180}
               />
-              <span className="font-bold text-2xl">{siteName}</span>
             </a>
           </Link>
         </div>
