@@ -12,7 +12,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className="">
         <ul>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, desc, date, title }) => (
             <li className="border-t-2 border-indigo-100" key={id}>
               <Link href={`/posts/${id}`}>
                 <a className="block pb-6 hover:opacity-60">
@@ -20,6 +20,7 @@ export default function Home({ allPostsData }) {
                     <Date dateString={date} />
                   </div>
                   <span className="text-lg font-semibold">{title}</span>
+                  <div className="text-sm text-gray-500">{desc}</div>
                 </a>
               </Link>
             </li>
