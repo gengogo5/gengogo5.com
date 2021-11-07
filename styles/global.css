@@ -13,10 +13,6 @@ body {
   box-sizing: border-box;
 }
 
-a:hover {
-  @apply hover:opacity-60;
-}
-
 /* Markdown Styles */
 /* Global */
 .markdown {
