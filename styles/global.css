@@ -101,7 +101,7 @@ body {
 
 /* Code */
 .markdown :not(pre) > code {
-  @apply bg-indigo-50 p-1 font-semibold text-gray-600 rounded-lg ;
+  @apply bg-indigo-50 p-1 font-mono  text-gray-700 rounded-md ;
 }
 
 /* Pre */
