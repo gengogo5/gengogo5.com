@@ -13,7 +13,7 @@ export default function Post({ postData }) {
         <div className="text-gray-500 pt-5">
           <Date dateString={postData.date} />
         </div>
-        <h1 className="text-3xl pb-5">{postData.title}</h1>
+        <h1 className="text-3xl pb-5 font-bold">{postData.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>

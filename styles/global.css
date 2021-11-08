@@ -3,9 +3,6 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply pt-10 pb-40 px-6 tablet:p-0;
-  @apply text-gray-700;
-  @apply bg-indigo-50;
   font-family: -apple-system,"BlinkMacSystemFont","Hiragino Maru Gothic ProN W4","Hiragino Sans","Meiryo","sans-serif","Segoe UI Emoji";
 }
 
@@ -101,7 +98,7 @@ body {
 
 /* Code */
 .markdown :not(pre) > code {
-  @apply bg-indigo-50 p-1 font-semibold text-gray-600 rounded-lg ;
+  @apply bg-indigo-50 p-1 font-mono font-thin  text-gray-700 rounded-md ;
 }
 
 /* Pre */
