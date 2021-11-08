@@ -4,7 +4,7 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 
-export default function Home({ allPostsData }) {
+export default function Home({ allPostsMetaData }) {
   return (
     <Layout home>
       <Head>
@@ -12,7 +12,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className="">
         <ul>
-          {allPostsData.map(({ id, desc, date, title }) => (
+          {allPostsMetaData.map(({ id, summary, date, title }) => (
             <li className="border-t-2 border-indigo-100" key={id}>
               <Link href={`/posts/${id}`}>
                 <a className="block pb-6 hover:opacity-60">
@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
                     <Date dateString={date} />
                   </div>
                   <span className="text-lg font-semibold">{title}</span>
-                  <div className="text-sm text-gray-500">{desc}</div>
+                  <div className="text-sm text-gray-500">{summary}</div>
                 </a>
               </Link>
             </li>
@@ -32,10 +32,16 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = await getSortedPostsData()
+
+  const allPostsMetaData = allPostsData.map((data) => {
+    const { contentHtml, ...metaData } = data
+    return metaData
+  })
+
   return {
     props: {
-      allPostsData
+      allPostsMetaData
     }
   }
 }
