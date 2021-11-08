@@ -13,7 +13,7 @@ export default function Home({ allPostsMetaData }) {
       <section className="">
         <ul>
           {allPostsMetaData.map(({ id, summary, date, title }) => (
-            <li className="border-t-2 border-indigo-100" key={id}>
+            <li className="border-t border-indigo-100" key={id}>
               <Link href={`/posts/${id}`}>
                 <a className="block pb-6 hover:opacity-60">
                   <div className="text-gray-400 text-sm">
