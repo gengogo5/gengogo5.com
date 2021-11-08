@@ -10,10 +10,10 @@ export default function Home({ allPostsMetaData }) {
       <Head>
         <title>gengogo5.com</title>
       </Head>
-      <section className="">
+      <section className="pt-5">
         <ul>
           {allPostsMetaData.map(({ id, summary, date, title }) => (
-            <li className="border-t border-indigo-100" key={id}>
+            <li className="border-b border-indigo-100 pt-1" key={id}>
               <Link href={`/posts/${id}`}>
                 <a className="block pb-6 hover:opacity-60">
                   <div className="text-gray-400 text-sm">
