@@ -22,7 +22,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteName} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className="pl-5 pt-1 sticky top-0 border-b border-indigo-50 bg-white z-10">
+      <header className="pl-5 tablet:pl-3 pt-1 sticky top-0 border-b border-indigo-50 bg-white z-10">
         <div className="inline-flex">
           <Link href="/">
             <a className="block">
