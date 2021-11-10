@@ -55,6 +55,9 @@ export default function Layout({ children, home }) {
           )}
         </div>
       </div>
+      <footer className="border-t border-indigo-50 bg-white text-center">
+        <span className="text-gray-500 text-sm">© 2021 {siteName}</span>
+      </footer>
     </>
   )
 }
