@@ -8,7 +8,6 @@ import rehypeReact from 'rehype-react';
 import React from 'react';
 import CustomImage from '../../components/customImage';
 
-
 export default function Post({ postData }) {
   return (
     <Layout>
