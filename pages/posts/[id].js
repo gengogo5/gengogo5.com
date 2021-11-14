@@ -6,7 +6,7 @@ import { unified } from 'unified';
 import rehypeParse from 'rehype-parse';
 import rehypeReact from 'rehype-react';
 import React from 'react';
-
+import CustomImage from '../../components/customImage';
 
 export default function Post({ postData }) {
   return (
@@ -29,7 +29,10 @@ export function html2react(contentHtml) {
   const reactComponent = unified()
     .use(rehypeParse, { fragment: true })
     .use(rehypeReact, {
-      createElement: React.createElement
+      createElement: React.createElement,
+      components: {
+        img: CustomImage,
+      }
     })
     .processSync(contentHtml).result;
   return reactComponent
