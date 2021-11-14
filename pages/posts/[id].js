@@ -2,6 +2,11 @@ import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Head from 'next/head'
 import Date from '../../components/date'
+import { unified } from 'unified';
+import rehypeParse from 'rehype-parse';
+import rehypeReact from 'rehype-react';
+import React from 'react';
+
 
 export default function Post({ postData }) {
   return (
@@ -14,11 +19,21 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <h1 className="text-3xl pb-5 font-bold">{postData.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        {html2react(postData.contentHtml)}
       </article>
     </Layout>
   )
 }
+
+export function html2react(contentHtml) {
+  const reactComponent = unified()
+    .use(rehypeParse, { fragment: true })
+    .use(rehypeReact, {
+      createElement: React.createElement
+    })
+    .processSync(contentHtml).result;
+  return reactComponent
+} 
 
 export async function getStaticPaths() {
   const paths = getAllPostIds()
