@@ -15,17 +15,6 @@ body {
 .markdown {
     @apply leading-relaxed text-base;
 }
-/*
-@screen sm {
-  .markdown {
-    @apply text-base;
-  }
-}
-@screen lg {
-  .markdown {
-    @apply text-lg;
-  }
-}*/
 
 /* Headers */
 .markdown h1 {
@@ -41,7 +30,9 @@ body {
   @apply text-lg my-3 ;
 }
 @screen sm {
-  .markdown h1,
+  .markdown h1 {
+    @apply text-3xl;
+  }
   .markdown h2 {
     @apply text-2xl;
   }
@@ -88,6 +79,37 @@ body {
   @apply p-2 mx-2 my-2 bg-blue-50 opacity-70 mb-4 border-l-4 border-blue-300  rounded-r-lg;
 }
 .markdown blockquote > p {
+  @apply mb-0;
+}
+.markdown table {
+  @apply p-0;
+}
+.markdown table tr {
+  @apply border-t border-solid border-gray-300;
+  @apply m-0 p-0;
+}
+.markdown table tr:nth-child(2n) {
+  @apply bg-gray-50;
+}
+.markdown table tr th {
+  @apply font-bold;
+  @apply border border-solid border-gray-300;
+  @apply text-left;
+  @apply m-0 py-1 px-3;
+}
+
+.markdown table tr td {
+  @apply border border-solid border-gray-300;
+  @apply text-left;
+  @apply m-0;
+  @apply py-1 px-3;
+}
+
+.markdown table tr th :first-child, table tr td :first-child {
+  @apply mt-0;
+}
+
+.markdown table tr th :last-child, table tr td :last-child {
   @apply mb-0;
 }
 
