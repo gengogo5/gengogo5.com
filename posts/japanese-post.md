@@ -27,3 +27,13 @@ date: "2020-01-02"
 以下は愛犬の画像
 
 ![画像テスト](/images/kurumi.jpeg)
+
+### マークダウンのテスト
+
+~~取り消し線~~
+
+|header1|header2|header3|
+|:--|--:|:--:|
+|align left|align right|align center|
+|a|b|c|
+
