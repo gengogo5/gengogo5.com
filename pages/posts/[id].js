@@ -7,6 +7,7 @@ import rehypeParse from 'rehype-parse';
 import rehypeReact from 'rehype-react';
 import React from 'react';
 import CustomImage from '../../components/customImage';
+import CustomLink from '../../components/customLink';
 
 export default function Post({ postData }) {
   return (
@@ -32,6 +33,7 @@ export function html2react(contentHtml) {
       createElement: React.createElement,
       components: {
         img: CustomImage,
+        a: CustomLink,
       }
     })
     .processSync(contentHtml).result;
