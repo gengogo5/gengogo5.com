@@ -11,12 +11,11 @@ body {
 }
 
 /* Markdown Styles */
-/* Global */
+/* github-markdown-cssを入れたら崩れたので、手動でCSS設定する */
 .markdown {
     @apply leading-relaxed text-base;
 }
 
-/* Headers */
 .markdown h1 {
   @apply text-3xl my-6 tablet:text-2xl;
 }
@@ -44,7 +43,6 @@ body {
   }
 }
 
-/* Links */
 .markdown a {
   @apply text-blue-600;
 }
@@ -52,12 +50,10 @@ body {
   @apply underline;
 }
 
-/* Paragraph */
 .markdown p {
   @apply mb-6 leading-8 text-justify;
 }
 
-/* Lists */
 .markdown ul,
 .markdown ol {
   @apply mb-4 ml-8;
@@ -73,8 +69,6 @@ body {
 .markdown ul {
   @apply list-disc;
 }
-
-/* Blockquotes */
 .markdown blockquote {
   @apply p-2 mx-2 my-2 bg-blue-50 opacity-70 mb-4 border-l-4 border-blue-300  rounded-r-lg;
 }
@@ -113,17 +107,14 @@ body {
   @apply mb-0;
 }
 
-/* Images */
 .markdown img {
   @apply shadow-lg;
 }
 
-/* Code */
 .markdown :not(pre) > code {
   @apply bg-indigo-50 p-1 font-mono font-thin  text-gray-700 rounded-md ;
 }
 
-/* Pre */
 .markdown pre {
   @apply mx-2;
 }

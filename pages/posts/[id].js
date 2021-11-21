@@ -26,6 +26,7 @@ export default function Post({ postData }) {
   )
 }
 
+// LinkとImageを本文で使う為、HTML書き出しではなくreactコンポーネント書き出しにした
 export function html2react(contentHtml) {
   const reactComponent = unified()
     .use(rehypeParse, { fragment: true })
