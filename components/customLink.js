@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+// 内部リンクはLinkコンポーネントにする
+// 外部リンクは別タブで開く
 const CustomLink = ({
   children,
   href
