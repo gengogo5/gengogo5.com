@@ -17,16 +17,14 @@ export default function Layout({ children, home }) {
         <meta name="theme-color" content="#ffffff"></meta>
         <meta
           name="description"
-          content="gengogo5の雑記帳"
+          content="gengogo5の日記"
         />
         <meta
           property="og:image"
-          content={`https://og-image.vercel.app/${encodeURI(
-            siteName
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content="/images/site-ogp.png"
         />
         <meta name="og:title" content={siteName} />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content="summary" />
       </Head>
       <header className="pl-5 tablet:pl-3 pt-1 sticky top-0 border-b border-indigo-50 bg-white z-10">
         <div className="inline-flex">
