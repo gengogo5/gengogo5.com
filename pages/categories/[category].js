@@ -1,7 +1,8 @@
+import Layout from '../../components/layout'
+import { getAllCategories, getSortedPostsData } from '../../lib/posts'
 import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import { getSortedPostsData } from '../lib/posts'
-import IndexItem from '../components/indexItem'
+import React from 'react';
+import IndexItem from '../../components/indexItem'
 
 export default function Home({ allPostsMetaData }) {
   return (
@@ -20,8 +21,17 @@ export default function Home({ allPostsMetaData }) {
   )
 }
 
-export async function getStaticProps() {
-  const allPostsData = await getSortedPostsData()
+export async function getStaticPaths() {
+  const paths = await getAllCategories()
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+export async function getStaticProps({ params }) {
+  const allPostsData = await getSortedPostsData(params?.category)
 
   const allPostsMetaData = allPostsData.map((data) => {
     const { contentHtml, ...metaData } = data
@@ -34,3 +44,4 @@ export async function getStaticProps() {
     }
   }
 }
+

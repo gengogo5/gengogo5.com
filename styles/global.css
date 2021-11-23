@@ -43,7 +43,7 @@ body {
   }
 }
 
-.markdown a {
+.markdown p a {
   @apply text-blue-600;
 }
 .markdown a:hover {
