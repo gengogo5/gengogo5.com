@@ -8,6 +8,7 @@ import rehypeReact from 'rehype-react';
 import React from 'react';
 import CustomImage from '../../components/customImage';
 import CustomLink from '../../components/customLink';
+import Link from 'next/link';
 
 export default function Post({ postData }) {
   return (
@@ -19,6 +20,11 @@ export default function Post({ postData }) {
         <div className="text-gray-500 pt-5">
           <Date dateString={postData.date} />
         </div>
+        <span className="ml-1 px-1 border rounded-lg border-solid bg-gray-100">
+          <Link href={`/categories/${postData.category}`}>
+            <a className="text-sm text-gray-700">{postData.category}</a>
+          </Link>
+        </span>
         <h1 className="text-3xl pb-5 font-bold">{postData.title}</h1>
         {html2react(postData.contentHtml)}
       </article>
