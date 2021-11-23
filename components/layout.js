@@ -53,7 +53,7 @@ export default function Layout({ children, home }) {
           {!home && (
             <div>
               <Link href="/">
-                <a>&lt;&lt; 記事一覧へ</a>
+                <a className="underline">&lt;&lt; 記事一覧へ</a>
               </Link>
             </div>
           )}

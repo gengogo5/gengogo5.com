@@ -46,7 +46,7 @@ body {
 .markdown p a {
   @apply text-blue-600;
 }
-.markdown a:hover {
+.markdown p a:hover {
   @apply underline;
 }
 
