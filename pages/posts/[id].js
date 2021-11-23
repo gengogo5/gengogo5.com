@@ -20,7 +20,7 @@ export default function Post({ postData }) {
         <div className="text-gray-500 pt-5">
           <Date dateString={postData.date} />
         </div>
-        <span className="ml-1 px-1 border rounded-lg border-solid bg-gray-100 hover:bg-gray-200">
+        <span className="ml-1 px-1 border rounded-md border-solid bg-gray-100 hover:bg-gray-200">
           <Link href={`/categories/${postData.category}`}>
             <a className="text-sm text-gray-600">{postData.category}</a>
           </Link>

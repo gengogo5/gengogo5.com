@@ -8,7 +8,7 @@ export default function IndexItem(props) {
         <span className="text-gray-400 text-sm">
           <Date className="text-gray-400 text-sm" dateString={props.date} />
         </span>
-        <span className="ml-1 px-1 border rounded-lg border-solid bg-gray-100 hover:bg-gray-200">
+        <span className="ml-1 px-1 border rounded-md border-solid bg-gray-100 hover:bg-gray-200">
           <Link href={`/categories/${props.category}`}>
             <a className="text-sm text-gray-600">{props.category}</a>
           </Link>
