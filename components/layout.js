@@ -53,14 +53,14 @@ export default function Layout({ children, home }) {
           {!home && (
             <div>
               <Link href="/">
-                <a>&lt;&lt; 記事一覧へ</a>
+                <a className="underline">&lt;&lt; 記事一覧へ</a>
               </Link>
             </div>
           )}
         </div>
       </div>
       <footer className="border-t border-indigo-50 bg-white text-center">
-        <span className="text-gray-500 text-sm">© 2021 {siteName}</span>
+        <span className="text-gray-500 text-sm">© 2021 <Link href="/"><a className="underline">{siteName}</a></Link></span>
       </footer>
     </>
   )
