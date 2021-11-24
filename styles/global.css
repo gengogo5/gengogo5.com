@@ -12,6 +12,7 @@ body {
 
 /* Markdown Styles */
 /* github-markdown-cssを入れたら崩れたので、手動でCSS設定する */
+/*
 .markdown {
     @apply leading-relaxed text-base;
 }
@@ -118,3 +119,4 @@ body {
 .markdown pre {
   @apply mx-2;
 }
+*/

@@ -16,7 +16,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article className="markdown">
+      <article className="znc">
         <div className="text-gray-500 pt-5">
           <Date dateString={postData.date} />
         </div>
