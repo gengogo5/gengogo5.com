@@ -90,5 +90,3 @@ const great = () => {
 https://zenn.dev/zenn/articles/markdown-guide
 
 
-あ、でもURLがそのまま表示されてしまうようだ。ここはなんとかしたい。
-
