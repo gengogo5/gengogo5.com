@@ -1,5 +1,7 @@
 import { GA_TRACKING_ID, pageview } from '../lib/gtag';
-import '../styles/global.css'
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import '../styles/global.css';
 import 'zenn-content-css';
 
 export default function App({ Component, pageProps }) {
