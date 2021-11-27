@@ -1,4 +1,4 @@
-import { GA_TRACKING_ID, pageview } from 'lib/gtag';
+import { GA_TRACKING_ID, pageview } from '../lib/gtag';
 import '../styles/global.css'
 import 'zenn-content-css';
 
