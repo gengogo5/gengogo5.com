@@ -61,7 +61,11 @@ export default function Layout({ children, home }) {
         </div>
       </div>
       <footer className="border-t border-indigo-50 bg-white text-center">
-        <span className="text-gray-500 text-sm">© 2021 <Link href="/"><a className="underline">{siteName}</a></Link></span>
+        <div className="text-gray-500 text-sm underline pb-1">
+          <span className="px-3"><Link href="/">Home</Link></span>
+          <span className="px-3"><Link href="/about">About</Link></span>
+        </div>
+        <div className="text-gray-500 text-sm">© 2021 {siteName}</div>
       </footer>
     </>
   )
