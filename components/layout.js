@@ -64,6 +64,7 @@ export default function Layout({ children, home }) {
         <div className="text-gray-500 text-sm underline pb-1">
           <span className="px-3"><Link href="/">Home</Link></span>
           <span className="px-3"><Link href="/about">About</Link></span>
+          <span className="px-3"><a href="https://docs.google.com/forms/d/e/1FAIpQLScoVFjo9eHfxvvYjSqjLruisqzFZlWfUWB683JG1S9Wni8ZWQ/viewform" target="_blank" rel="noopener noreferrer">Contact</a></span>
         </div>
         <div className="text-gray-500 text-sm">© 2021 {siteName}</div>
       </footer>
