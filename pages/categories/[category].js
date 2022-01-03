@@ -13,7 +13,7 @@ export default function Home({ allPostsMetaData }) {
       <section className="pt-5">
         <ul>
           {allPostsMetaData.map(({ id, summary, date, title, category }) => (
-            <IndexItem id={id} summary={summary} date={date} title={title} category={category}/>
+            <IndexItem id={id} summary={summary} date={date} title={title} category={category} key={id}/>
           ))}
         </ul>
       </section>
