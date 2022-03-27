@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import IndexItem from '../components/indexItem'
+import { generateRssXml } from '../lib/feed'
 
 export default function Home({ allPostsMetaData }) {
   return (
@@ -27,6 +28,9 @@ export async function getStaticProps() {
     const { contentHtml, ...metaData } = data
     return metaData
   })
+
+  // 全記事分のRSSを出力する
+  generateRssXml(allPostsData);
 
   return {
     props: {
