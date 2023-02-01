@@ -28,6 +28,7 @@ class MyDocument extends Document {
               />
             </>
           )}
+          <script src="https://embed.zenn.studio/js/listen-embed-event.js"></script>
         </Head>
         <body>
           <Main />
