@@ -21,3 +21,6 @@
 Google広告は[Cookie](https://policies.google.com/technologies/cookies)を使用することにより、訪問者の当サイトや他サイトへのアクセス情報に基づいて、適切な広告(パーソナライズド広告)をユーザに表示します。
 
 パーソナライズド広告はGoogleの[広告設定ページ](https://www.google.com/settings/ads)で無効にすることができます。
+
+### Amazon アソシエイト・プログラム
+当サイトは、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。
